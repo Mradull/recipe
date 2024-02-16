@@ -83,7 +83,7 @@ public class RecipeFragment extends Fragment {
         Spinner spinner = rootView.findViewById(R.id.spinner);
         TextView tvHeading = rootView.findViewById(R.id.tvHeading);
         tvDescription = rootView.findViewById(R.id.tvDescription);
-        tvDescription1 = rootView.findViewById(R.id.tvDescription1);
+        tvDescription1 = rootView.findViewById(R.id.tvDescription2);
         ivDropDown = rootView.findViewById(R.id.ivDropDown);
         progressBarsLayout = rootView.findViewById(R.id.progressBarsLayout);
         progressBarProtein = rootView.findViewById(R.id.progressBarProtein);
@@ -99,13 +99,16 @@ public class RecipeFragment extends Fragment {
         });
         // Create a list of items for the spinner
         List<Item> items = new ArrayList<>();
-        items.add(new Item("Add all Ingredients to List", false));
-        items.add(new Item("Boneless, skinless chicken breast halves", false));
-        items.add(new Item("Ranch salad dressing", false));
-        items.add(new Item("Dry bread crumbs", false));
-        items.add(new Item("Grated parmesan cheese", false));
-        items.add(new Item("Black pepper", false));
+        items.add(new Item("Ingredients ", false));
+        items.add(new Item("Eggs", false));
+        items.add(new Item("Milk", false));
+        items.add(new Item("Chocochips", false));
+        items.add(new Item("Butter", false));
+        items.add(new Item("Backing Soda", false));
         items.add(new Item("Salt", false));
+        items.add(new Item("Sugar", false));
+        items.add(new Item("Flour", false));
+
 
         // Create a custom adapter
         CustomAdapter adapter = new CustomAdapter(items);

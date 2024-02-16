@@ -20,7 +20,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="75dp"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
                 <EditText
@@ -79,7 +79,7 @@
                     android:paddingLeft="80dp"
                     android:text="See All"
                     android:textColor="@color/black"
-                    android:textSize="20dp"
+                    android:textSize="16dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -105,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/veg" />
+                    app:srcCompat="@drawable/veg1" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -163,18 +163,18 @@
 
                 <ImageButton
                     android:id="@+id/imageButton1"
-                    android:layout_width="114dp"
-                    android:layout_height="150dp"
+                    android:layout_width="111dp"
+                    android:layout_height="165dp"
                     android:layout_marginStart="15dp"
                     android:contentDescription="TODO"
-                    android:src="@drawable/dairy" />
+                    android:src="@drawable/detergent" />
 
                 <ImageButton
                     android:id="@+id/imageButton2"
                     android:layout_width="114dp"
                     android:layout_height="160dp"
                     android:layout_marginStart="15dp"
-                    android:src="@drawable/rice"
+                    android:src="@drawable/veg"
                     android:contentDescription="TODO" />
             </LinearLayout>
         </LinearLayout>

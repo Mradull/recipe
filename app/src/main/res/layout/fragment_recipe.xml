@@ -17,21 +17,21 @@
 
             <TextView
                 android:id="@+id/heading"
-                android:layout_width="247dp"
-                android:layout_height="44dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:fontFamily="@font/bungee"
                 android:gravity="center"
                 android:text="Cookies Recipe"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="221dp"
-                android:layout_marginTop="30dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/img_3" />
 
             <LinearLayout
@@ -50,7 +50,7 @@
                     android:paddingRight="50dp"
                     android:text="Servings"
                     android:textColor="@color/black"
-                    android:textSize="32sp" />
+                    android:textSize="30sp" />
 
                 <Button
                     android:id="@+id/btnMinus"
@@ -252,31 +252,30 @@
                 android:id="@+id/tvDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Butter: This classic chocolate chip cookie recipe starts with two sticks of butter creamed with white and brown sugars. The blend of sugars creates a perfectly balanced flavor.
-Eggs: Eggs add moisture and act as a binding agent, which means they help hold the dough together.
-Vanilla: Vanilla extract enhances the overall flavor of the chocolate chip cookies.
-Baking soda: Baking soda acts as a leavener, which means it helps the cookies rise.
-Water: A bit of hot water creates steam as it bakes, working with the baking soda to puff the cookies up.
-Salt: A pinch of salt enhances the flavors of the other ingredients, but it won't make the cookies taste salty.
-Flour: All-purpose flour helps create gluten, which adds structure to the cookie dough.
-Chocolate chips: Of course, you'll need semisweet chocolate chips! You can use dark or milk chocolate chips if you prefer."
+                android:text="1. Chill the dough. Chilling the cookie dough is so important in this recipe! Unless you want the cookies to spread into a massive cookie puddle, chilling the dough is mandatory here. It allows the ingredients to settle together after the mixing stage but most importantly: cold dough results
+                in thicker cookies. Cover the cookie dough and chill for at least 2–3 hours and even up to 3–4 days."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:ignore="DuplicateIds" />
 
             <TextView
-                android:id="@+id/tvDescription1"
+                android:id="@+id/tvDescription2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="2. Season the salmon with salt and pepper and arrange onto the prepared broiler pan. Whisk together the brown sugar and Dijon mustard in a small bowl; spoon mixture evenly onto top of salmon fillets."
+                android:text="Roll the cookie dough balls extra tall. After the dough has chilled, scoop out a ball of dough that’s 3 Tablespoons for XL cookies or about 2 heaping Tablespoons (1.75 ounces or 50g) for medium/large cookies. I usually use this medium cookie scoop and make it a heaping scoop. But making the cookie dough balls tall and textured, rather than wide and smooth, is my tried-and-true trick that results in thick and textured-looking cookies.
+                 We’re talking thick bakery-style cookies with wrinkly, textured tops."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:visibility="gone" />
+                android:visibility="gone"
+                tools:ignore="DuplicateIds" />
 
             <!-- Description -->
 
 
         </LinearLayout>
+
+
     </RelativeLayout>
 
     <!-- TODO: Update blank fragment layout -->
