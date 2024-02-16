@@ -74,7 +74,7 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="222dp"
+                    android:layout_width="154dp"
                     android:layout_height="44dp"
                     android:paddingLeft="80dp"
                     android:text="See All"
@@ -102,29 +102,29 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/veg1" />
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="114dp"
-                    android:layout_height="match_parent"
+                    android:layout_width="113dp"
+                    android:layout_height="81dp"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/milk" />
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/medi" />
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/things" />
 
@@ -167,7 +167,7 @@
                     android:layout_height="165dp"
                     android:layout_marginStart="15dp"
                     android:contentDescription="TODO"
-                    android:src="@drawable/detergent" />
+                    android:src="@drawable/aa" />
 
                 <ImageButton
                     android:id="@+id/imageButton2"
