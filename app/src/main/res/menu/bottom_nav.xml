@@ -10,13 +10,13 @@
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="List"
-        android:id="@+id/list"
+        android:title="Categories"
+        android:id="@+id/categories"
         android:icon="@drawable/baseline_format_list_bulleted_24"/>
     <item
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:title="Shop"
+        android:title="Shop Deals"
         android:id="@+id/shop"
         android:icon="@drawable/baseline_shopping_bag_24"/>
     <item
