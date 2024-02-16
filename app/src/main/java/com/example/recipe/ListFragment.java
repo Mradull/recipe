@@ -3,10 +3,15 @@ package com.example.recipe;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +28,7 @@ public class ListFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private ViewPager viewPager;
 
     public ListFragment() {
         // Required empty public constructor
@@ -58,7 +64,38 @@ public class ListFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list, container, false);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
+        viewPager = view.findViewById(R.id.viewPager);
+        ImageSliderAdapter adapter = new ImageSliderAdapter(requireContext());
+        viewPager.setAdapter(adapter);
+
+        Spinner locationSpinner = view.findViewById(R.id.locationSpinner);
+
+        // Create an ArrayAdapter for the Spinner using the string array
+        ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter.createFromResource(
+                requireContext(),
+                R.array.locations,
+                android.R.layout.simple_spinner_item
+        );
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        locationSpinner.setAdapter(spinnerAdapter);
+
+        // Set a listener for the Spinner
+        locationSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                // Handle the selected item from the Spinner
+                String selectedLocation = parentView.getItemAtPosition(position).toString();
+                Toast.makeText(requireContext(), "Selected Location: " + selectedLocation, Toast.LENGTH_SHORT).show();
+                // You can perform additional actions based on the selected location
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // Do nothing here
+            }
+        });
+
+        return view;
     }
 }
