@@ -3,4 +3,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="groocy">Groocy</string>
+    <string-array name="locations">
+        <item>New York</item>
+        <item>Los Angeles</item>
+        <item>London</item>
+        <!-- Add more locations as needed -->
+    </string-array>
 </resources>
