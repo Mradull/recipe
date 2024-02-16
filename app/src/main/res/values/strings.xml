@@ -9,4 +9,19 @@
         <item>London</item>
         <!-- Add more locations as needed -->
     </string-array>
+    <string-array name="grocery_categories">
+        <item>Food</item>
+        <item>Beverages</item>
+        <item>Medicines</item>
+        <item>Vegetables &amp; Fruits</item>
+        <item>Milk Products</item>
+        <item>Atta,Rice &amp; Dal</item>
+        <item>Oil, Ghee &amp; Masala</item>
+        <item>Dairy,Bread &amp; Eggs</item>
+        <item>Bakery &amp; Biscuits</item>
+        <item>Dry Fruits &amp; Cereals</item>
+        <item>Chicken,Meat &amp; Fish</item>
+        <item>Kitchenware &amp; Appliances</item>
+        <!-- Add more categories as needed -->
+    </string-array>
 </resources>

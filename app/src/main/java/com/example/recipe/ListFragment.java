@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -70,6 +71,9 @@ public class ListFragment extends Fragment {
         viewPager.setAdapter(adapter);
 
         Spinner locationSpinner = view.findViewById(R.id.locationSpinner);
+        Spinner categorySpinner = view.findViewById(R.id.categorySpinner);
+
+
 
         // Create an ArrayAdapter for the Spinner using the string array
         ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter.createFromResource(
@@ -87,6 +91,28 @@ public class ListFragment extends Fragment {
                 // Handle the selected item from the Spinner
                 String selectedLocation = parentView.getItemAtPosition(position).toString();
                 Toast.makeText(requireContext(), "Selected Location: " + selectedLocation, Toast.LENGTH_SHORT).show();
+                // You can perform additional actions based on the selected location
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parentView) {
+                // Do nothing here
+            }
+        });
+        ArrayAdapter<CharSequence> spinnerAdapter2 = ArrayAdapter.createFromResource(
+                requireContext(),
+                R.array.grocery_categories,
+                android.R.layout.simple_spinner_item
+        );
+        spinnerAdapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        categorySpinner.setAdapter(spinnerAdapter2);
+
+        // Set a listener for the second Spinner
+        categorySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
+                String selectedLocation = parentView.getItemAtPosition(position).toString();
+                Toast.makeText(requireContext(), "Selected Category: " + selectedLocation, Toast.LENGTH_SHORT).show();
                 // You can perform additional actions based on the selected location
             }
 
