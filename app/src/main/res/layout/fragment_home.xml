@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".HomeFragment">
 
     <LinearLayout
@@ -79,7 +80,7 @@
                     <ImageView
                         android:layout_width="88dp"
                         android:layout_height="59dp"
-                        android:src="@drawable/baseline_access_time_24"></ImageView>
+                        android:src="@drawable/time"></ImageView>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -108,7 +109,7 @@
                     <ImageView
                         android:layout_width="104dp"
                         android:layout_height="61dp"
-                        android:src="@drawable/baseline_delivery_dining_24"></ImageView>
+                        android:src="@drawable/delivery"></ImageView>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -137,7 +138,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:src="@drawable/baseline_shopping_bag_24"></ImageView>
+                        android:src="@drawable/hot"></ImageView>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -166,7 +167,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:src="@drawable/baseline_shopping_cart_24"></ImageView>
+                        android:src="@drawable/bag"></ImageView>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -204,8 +205,9 @@
                 android:layout_height="44dp"
                 android:paddingLeft="80dp"
                 android:text="See All"
+
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="18dp"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -218,29 +220,29 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="91dp"
+                android:layout_height="67dp"
                 android:layout_weight="1"
                 android:src="@drawable/veg1" />
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="114dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
                 android:layout_weight="1"
                 android:src="@drawable/milk" />
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="69dp"
                 android:layout_weight="1"
                 android:src="@drawable/medi" />
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="118dp"
+                android:layout_height="69dp"
                 android:layout_weight="1"
                 android:src="@drawable/things" />
 
@@ -290,7 +292,7 @@
                 android:layout_width="114dp"
                 android:layout_height="160dp"
                 android:layout_marginStart="15dp"
-                android:src="@drawable/detergent"
+                android:src="@drawable/aa"
                 android:contentDescription="TODO" />
         </LinearLayout>
     </LinearLayout>

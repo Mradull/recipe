@@ -10,7 +10,7 @@ import androidx.viewpager.widget.PagerAdapter;
 public class ImageSliderAdapter extends PagerAdapter {
 
     private final Context context;
-    private final int[] images = {R.drawable.img_11, R.drawable.img_10, R.drawable.img_8}; // Add your image resources here
+    private final int[] images = {R.drawable.img_10, R.drawable.img_11, R.drawable.img_8}; // Add your image resources here
 
     public ImageSliderAdapter(Context context) {
         this.context = context;
