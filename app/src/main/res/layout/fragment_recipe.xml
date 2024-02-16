@@ -228,9 +228,9 @@
 
                 <TextView
                     android:id="@+id/tvHeading"
-                    android:layout_width="wrap_content"
+                    android:layout_width="85dp"
                     android:layout_height="wrap_content"
-                    android:text="Ingredients Used"
+                    android:text="Recipe"
                     android:textColor="@color/black"
                     android:textSize="18sp"
                     android:textStyle="bold">
@@ -240,9 +240,10 @@
                 <ImageView
                     android:id="@+id/ivDropDown"
                     android:layout_width="wrap_content"
-                    android:layout_height="67dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
                     android:contentDescription="Drop-down arrow"
-                    android:paddingLeft="280dp"
+                    android:paddingLeft="260dp"
                     android:src="@drawable/ic_dropdown" />
                 <!-- Drop-down Arrow -->
 

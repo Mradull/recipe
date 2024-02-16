@@ -4,13 +4,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="groocy">Groocy</string>
     <string-array name="locations">
-        <item>New York</item>
-        <item>Los Angeles</item>
-        <item>London</item>
+        <item>DELHI</item>
+        <item>GHAZIABAD</item>
+        <item>MUMBAI</item>
+        <item>DEHRADUN</item>
+        <item>MURADABAD</item>
+        <item>KERELA</item>
         <!-- Add more locations as needed -->
     </string-array>
     <string-array name="grocery_categories">
-        <item>Food</item>
+        <item>Select your grocery</item>
         <item>Beverages</item>
         <item>Medicines</item>
         <item>Vegetables &amp; Fruits</item>
